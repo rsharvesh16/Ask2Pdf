@@ -17,8 +17,6 @@ The PDF Chatbot is an AI-powered tool that allows users to upload multiple PDF f
 2. **Ask Questions:** Users can ask questions related to the content of the uploaded PDFs.
 3. **Search Content:** The chatbot searches for the relevant information in the PDFs and provides the user with the answer.
 4. **Contextual Understanding:** The chatbot understands the context of the questions and provides accurate answers.
-5. **Multi-Language Support:** The chatbot supports multiple languages for both input and output.
-6. **Feedback System:** Users can provide feedback on the accuracy of the answers provided by the chatbot.
 
 **Installation:**
 
@@ -57,4 +55,3 @@ The PDF Chatbot is an AI-powered tool that allows users to upload multiple PDF f
 
 1. Upload PDFs: Click on the "Upload PDF" button to upload one or more PDF files.
 2. Ask Questions: Type your question in the input box and press "Enter" to get the answer.
-3. Provide Feedback: Click on the "Feedback" button and provide feedback on the accuracy of the answers.
