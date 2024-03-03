@@ -4,6 +4,13 @@
 
 The PDF Chatbot is an AI-powered tool that allows users to upload multiple PDF files and then ask questions related to the content of these files. We have used LangChain and Google Gemini Pro Generative AI Model for the project.
 
+<div align="center">
+<img width="446" alt="image" src="image2.png">
+</div>
+<div align="center">
+<img width="446" alt="image" src="image1.png">
+</div>
+
 **Features:**
 
 1. **Upload PDFs:** Users can upload multiple PDF files to the chatbot.
