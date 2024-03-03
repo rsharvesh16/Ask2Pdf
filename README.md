@@ -21,10 +21,10 @@ The PDF Chatbot is an AI-powered tool that allows users to upload multiple PDF f
     git clone https://github.com/rsharvesh16/Pdf-Chatbot.git
     ```
 
-2. Go to .env file and Upload your Google Gemini API Key.
+2. Go to the below link and you can create your own Gemini API key. Go to .env file and Upload your Google Gemini API Key.
    
     ```bash
-   [Click here to create your own Google Gemini API](https://aistudio.google.com/app/apikey)
+    https://aistudio.google.com/app/apikey
 
     ```
 
