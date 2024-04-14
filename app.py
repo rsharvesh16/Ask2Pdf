@@ -83,19 +83,51 @@ def get_pdf_text(pdf_docs):
     return text
 
 def main():
-    st.set_page_config("PDF ChatBot")
-    st.header("Chat With PDFs")
-    user_question = st.text_input("Ask a Question from the PDF Files")
-    if user_question:
-        user_input(user_question)
-    with st.sidebar:
-        st.title("Menu:")
-        pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
-        if st.button("Submit & Process"):
+    # HTML/CSS for custom styling
+    html_temp = """
+    <style>
+    .section-header {
+        background-color: #F0F0F0;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .section-header2 {
+        background-color: #F0F0F0;
+        padding: 4px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    </style>
+    <div class="section-header">
+    <h1 style="color:#333333;text-align:center;">PDF ChatBot</h1>
+    </div>
+    """
+    st.markdown(html_temp, unsafe_allow_html=True)
+    st.markdown("<h2 style='color:#F0F0F0;'>Chat With PDFs - Made with Love ❤️ by Sharrr</h2>", unsafe_allow_html=True)
+
+    st.sidebar.header("Menu:")
+    pdf_docs = st.sidebar.file_uploader("Upload your PDF Files", accept_multiple_files=True)
+    
+    if pdf_docs:
+        if st.sidebar.button("Submit & Process"):
             with st.spinner("Processing..."):
                 raw_text = get_pdf_text(pdf_docs)
                 text_chunks = get_text_chunks(raw_text)
                 get_vector_store(text_chunks)
                 st.success("Done")
+
+
+    user_question = st.text_input("Ask a Question from the PDF Files")
+
+    if user_question:
+        user_input(user_question)
+
+    st.write("If you like my work, Consider")
+    image_url = "https://i.etsystatic.com/32289224/r/il/294bb2/3603423963/il_1588xN.3603423963_tuhu.jpg"
+    st.markdown(f"<a href='https://www.buymeacoffee.com/rsharvesh16' target='_blank'><img src='{image_url}' width='700'></a>", unsafe_allow_html=True)
+
+
+
 if __name__ == "__main__":
     main()
